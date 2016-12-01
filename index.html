@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <h1>Middle Eastern Drone Strikes</h1>
+    
+    <div class="wrap">
+      <div class="barchart"></div>
+    </div>
+
+    <div id="map"></div>
+
+    <!-- D3 library -->
+    <script src="lib/d3.js" charset="utf-8"></script>
+    <script src="lib/d3.min.js" charset="utf-8"></script>
+    
+    <!-- External js libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <!-- Our js files -->
+    <script src="js/barChart.js"></script>
+
+    <script>
+      function initMap() {
+        var myLatLng = {lat: 29.227945, lng: 68.857616};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: myLatLng
+        });
+
+        d3.csv("data/Drone Strike Data.csv", function(error, data) {
+
+          data.forEach(function(d) {
+            d["Latitude"] = +d["Latitude"];
+            d["Longitude"] = +d["Longitude"];
+
+            var position = new google.maps.LatLng(d["Latitude"], d["Longitude"]);
+
+            var marker = new google.maps.Marker({
+              map: map,
+              position: position
+            });
+          })
+        })
+      }
+    </script>
+
+    <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtkuqLZG08Ov_5Ud0rZ5JV_eGifc42V3s&callback=initMap"></script>
+  </body>
+</html>
