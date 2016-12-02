@@ -45,10 +45,20 @@
 
             var position = new google.maps.LatLng(d["Latitude"], d["Longitude"]);
 
+            var infowindow = new google.maps.InfoWindow({
+              content: 
+              "<h2>" + d["Location"] + "</h2><p><b>Date:</b> " + d["Date"] + "</p><p><b>Reporting Tribal Agency:</b> " + d["Tribal Agency"] + "</p><p><b>Total Killed:</b> " + d["Maximum Total Reported Killed"] + "</p><p><b>Civillians Killed:</b> " + d["Maximum Civilians Reported Killed"] +"</p><p><b>Children Killed:</b> " + d["Maximum Children Reported Killed"] + "</p><p><b>Missiles Fired:</b> " + d["Maximum Number of Missiles Reported Fired"] + "</p>"
+            });
+
             var marker = new google.maps.Marker({
               map: map,
               position: position
             });
+
+            marker.addListener('click', function() {
+              infowindow.open(map, marker);
+            });
+
           })
         })
       }

@@ -1,9 +1,9 @@
 body {
   font: 11px sans-serif;
   font-weight: 400;
-  text-align: center;
-  background: #2856a0;
-  color: #ff0000;
+  text-align: left;
+  background: #8eb7f9;
+  color: #000000;
   font-family: 'Montserrat', sans-serif;
   height: 100%;
   margin: 0;
@@ -18,17 +18,24 @@ html {
 
 h1 {
   font-weight: 300;
-  color: #ffffff;
-  font-size: 18px;
+  color: #000000;
+  font-size: 20px;
   margin: 25px 0px 25px 0px;
   padding: 0;
   text-transform: uppercase;
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 12px;
   margin-bottom: 20px;
 }
 

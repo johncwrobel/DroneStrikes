@@ -12,7 +12,7 @@ var padding = 80;
 var x_translate = 40;
 var aggregatedData;
 
-var variables = ["Maximum Total Reported Killed", "Maximum Civilians Reported Killed", "Maximum Number of Missiles Reported FIred", "Maximum Domestic Buildings"]
+var variables = ["Maximum Total Reported Killed", "Maximum Civilians Reported Killed", "Maximum Number of Missiles Reported Fired", "Maximum Domestic Buildings"]
 var short_variables = ["Total Killed", "Civialian Casualties", "Missiles Fired", "Buildings Destroyed"]
 /* Setup axes/scales for bar chart */
 var barX = d3.scale.ordinal()
