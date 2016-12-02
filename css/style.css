@@ -2,7 +2,7 @@ body {
   font: 11px sans-serif;
   font-weight: 400;
   text-align: left;
-  background: #8eb7f9;
+  background: #f4cb50;
   color: #000000;
   font-family: 'Montserrat', sans-serif;
   height: 100%;
@@ -99,4 +99,5 @@ table {
   /*width: 775px;*/
   width: 52%;
   float: left;
+  margin-left: 20px;
 }
