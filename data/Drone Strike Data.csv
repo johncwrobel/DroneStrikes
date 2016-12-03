@@ -3,11 +3,11 @@ Ob160,13/11/2010,NWA,Pakistan,Ahmad Khel,Pakistan Ahmad Khel,33.1666669,71.25,Af
 Ob209,16/05/2011,NWA,Pakistan,Aimarki,Pakistan Aimarki,32.971444,70.278168,,1,2,1,1,0,1,0,0,0,0,4,2,2,4,10,0,0,0,0,2,4
 B42,22/11/2008,NWA,Pakistan,Ali Khel,Pakistan Ali Khel,32.0585491,71.6903245,Night,1,1,1,1,0,0,0,0,0,0,4,2,2,4,6,0,1,0,0,6,6
 Ob168,6/12/2010,NWA,Pakistan,Ali Khel,Pakistan Ali Khel,32.0585491,71.6903245,Evening,1,1,1,1,0,0,0,0,0,0,-,4,4,2,4,0,0,0,0,0,0
-Ob49,17/12/2009,NWA,Pakistan,Ambar Shaga,Pakistan Ambar Shaga,30.487048,98.186266,Afternoon,1,2,1,2,0,0,0,0,0,0,4,10,10,12,16,6,6,0,0,0,0
-Ob201,16/03/2011,NWA,Pakistan,Ambar Shaga,Pakistan Ambar Shaga,30.487048,98.186266,Morning,0,2,0,1,0,0,0,0,0,1,-,3,3,3,5,0,0,0,0,0,0
-B4,1/12/2005,NWA,India,Asori,India Asori,32.974702,70.251646,Night,1,1,1,1,0,0,0,0,0,0,-,Unreported,Unreported,6,6,2,3,2,2,0,0
-B37,31/10/2008,NWA,India,Asori,India Asori,32.974702,70.251646,Evening,0,2,0,1,0,0,0,0,0,1,4,2,2,4,25,1,20,0,0,0,0
-Ob107,14/08/2010,NWA,India,Asori,India Asori,32.974702,70.251646,Evening,1,2,1,2,0,0,0,0,0,0,-,2,2,13,14,7,7,1,1,5,6
+Ob49,17/12/2009,NWA,China,Ambar Shaga,Pakistan Ambar Shaga,30.487048,98.186266,Afternoon,1,2,1,2,0,0,0,0,0,0,4,10,10,12,16,6,6,0,0,0,0
+Ob201,16/03/2011,NWA,China,Ambar Shaga,Pakistan Ambar Shaga,30.487048,98.186266,Morning,0,2,0,1,0,0,0,0,0,1,-,3,3,3,5,0,0,0,0,0,0
+B4,1/12/2005,NWA,Pakistan,Asori,India Asori,32.974702,70.251646,Night,1,1,1,1,0,0,0,0,0,0,-,Unreported,Unreported,6,6,2,3,2,2,0,0
+B37,31/10/2008,NWA,Pakistan,Asori,India Asori,32.974702,70.251646,Evening,0,2,0,1,0,0,0,0,0,1,4,2,2,4,25,1,20,0,0,0,0
+Ob107,14/08/2010,NWA,Pakistan,Asori,India Asori,32.974702,70.251646,Evening,1,2,1,2,0,0,0,0,0,0,-,2,2,13,14,7,7,1,1,5,6
 B13,28/02/2008,SWA,Pakistan,Azam Warsak,Pakistan Azam Warsak,32.2907333,69.4285474,Night,1,2,1,1,0,1,0,0,0,0,4,3,3,10,13,0,0,0,0,6,16
 B46,11/12/2008,SWA,Pakistan,Azam Warsak,Pakistan Azam Warsak,32.2907333,69.4285474,Evening,1,1,1,1,0,0,0,0,0,0,4,2,2,6,7,0,7,0,0,0,0
 B49,22/12/2008,SWA,Pakistan,Azam Warsak,Pakistan Azam Warsak,32.2907333,69.4285474,Morning,1,1,0,0,0,0,0,0,1,1,4,Unreported,Unreported,2,4,0,0,0,0,4,4
@@ -24,11 +24,11 @@ Ob313,8/2/2013,SWA,Egypt,Babar Ghar,Egypt Babar Ghar,30.5805015,31.5087167,Eveni
 Ob317,17/04/2013,SWA,Egypt,Babar Ghar,Egypt Babar Ghar,30.5805015,31.5087167,Night,1,1,1,1,0,0,0,0,0,0,4,2,12,4,6,0,0,0,0,2,7
 Ob112,27/08/2010,Kurram,Pakistan,Badshah Kot,Pakistan Badshah Kot,32.9679573,70.2426927,Night,1,1,1,1,0,0,0,0,0,0,3,1,1,0,0,0,0,0,0,0,0
 Ob4,16/02/2009,Kurram,India,Baggan,India Baggan,26.5849674,82.2080653,Morning,1,1,1,1,0,0,0,0,0,0,4,2,4,18,31,0,0,0,0,3,7
-Ob203,13/04/2011,SWA,Pakistan,Baghar Cheena,Pakistan Baghar Cheena,31.7393007,75.379077,Afternoon,1,3,0,1,0,0,0,0,1,2,-,2,7,4,7,0,7,0,0,6,10
-Ob206,10/5/2011,SWA,Pakistan,Baghar Cheena,Pakistan Baghar Cheena,31.7393007,75.379077,Afternoon,1,1,0,1,0,0,0,0,1,0,-,2,4,3,5,0,0,0,0,4,4
-Ob242,30/09/2011,SWA,Pakistan,Baghar Cheena,Pakistan Baghar Cheena,31.7393007,75.379077,Afternoon,1,2,0,1,0,0,0,0,1,1,-,2,6,3,4,0,0,0,0,1,5
-Ob246,15/10/2011,SWA,Pakistan,Baghar Cheena,Pakistan Baghar Cheena,31.7393007,75.379077,Night,1,1,1,1,0,0,0,0,0,0,4,4,9,3,6,0,0,0,0,3,7
-Ob6,12/3/2009,Kurram,Pakistan,Barjo,Pakistan Barjo,24.3964393,85.9636618,Evening,1,4,1,4,0,0,0,0,0,0,4,2,5,14,26,0,0,0,0,9,50
+Ob203,13/04/2011,SWA,India,Baghar Cheena,Pakistan Baghar Cheena,31.7393007,75.379077,Afternoon,1,3,0,1,0,0,0,0,1,2,-,2,7,4,7,0,7,0,0,6,10
+Ob206,10/5/2011,SWA,India,Baghar Cheena,Pakistan Baghar Cheena,31.7393007,75.379077,Afternoon,1,1,0,1,0,0,0,0,1,0,-,2,4,3,5,0,0,0,0,4,4
+Ob242,30/09/2011,SWA,India,Baghar Cheena,Pakistan Baghar Cheena,31.7393007,75.379077,Afternoon,1,2,0,1,0,0,0,0,1,1,-,2,6,3,4,0,0,0,0,1,5
+Ob246,15/10/2011,SWA,India,Baghar Cheena,Pakistan Baghar Cheena,31.7393007,75.379077,Night,1,1,1,1,0,0,0,0,0,0,4,4,9,3,6,0,0,0,0,3,7
+Ob6,12/3/2009,Kurram,India,Barjo,Pakistan Barjo,24.3964393,85.9636618,Evening,1,4,1,4,0,0,0,0,0,0,4,2,5,14,26,0,0,0,0,9,50
 Ob229,12/7/2011,SWA,Afghanistan,Barmal,Afghanistan Barmal,32.7156593,69.2817936,,1,1,1,1,0,0,0,0,0,0,-,2,7,5,13,0,0,0,0,3,5
 Ob244,13/10/2011,SWA,Afghanistan,Barmal,Afghanistan Barmal,32.7156593,69.2817936,Afternoon,1,2,1,1,0,0,0,0,0,1,-,3,3,3,6,0,0,0,0,3,3
 Ob277,3/6/2012,SWA,Afghanistan,Barmal,Afghanistan Barmal,32.7156593,69.2817936,Morning,1,2,1,1,0,0,0,0,0,1,4,4,4,0,10,0,0,0,0,4,10
@@ -79,7 +79,7 @@ Ob291,24/08/2012,SWA,Pakistan,Darnashtra,Pakistan Darnashtra,32.540735,69.436512
 Ob292,24/08/2012,SWA,Pakistan,Darnashtra,Pakistan Darnashtra,32.540735,69.436512,Afternoon,2,3,0,1,0,0,0,0,2,2,-,2,2,0,0,0,0,0,0,0,0
 Ob245,14/10/2011,NWA,Pakistan,Darpa Khel,Pakistan Darpa Khel,32.9902185,70.0518027,Afternoon,1,1,0,0,0,0,0,0,1,1,-,2,2,3,6,0,0,0,0,0,0
 Ob271,23/05/2012,NWA,Pakistan,Darpa Khel,Pakistan Darpa Khel,32.9902185,70.0518027,Night,1,1,1,1,0,0,0,0,0,0,3,Unreported,Unreported,1,5,0,0,0,0,1,2
-Ob187,18/01/2011,NWA,Nepal,Dashgah,Nepal Dashgah,29.4773662,60.85888,Evening,1,1,1,1,0,0,0,0,0,0,-,2,3,3,7,0,0,0,0,3,3
+Ob187,18/01/2011,NWA,Iran,Dashgah,Nepal Dashgah,29.4773662,60.85888,Evening,1,1,1,1,0,0,0,0,0,0,-,2,3,3,7,0,0,0,0,3,3
 Ob48,17/12/2009,NWA,Pakistan,Datta Khel,Pakistan Datta Khel,33.15,70.433333,Night or morning,1,4,1,3,0,0,0,0,0,1,3,2,8,2,2,0,0,0,0,0,0
 Ob131,25/09/2010,NWA,Pakistan,Datta Khel,Pakistan Datta Khel,33.15,70.433333,Afternoon,1,1,0,0,0,0,0,0,1,1,-,3,2,2,4,0,0,0,0,0,0
 Ob133,26/09/2010,NWA,Pakistan,Datta Khel,Pakistan Datta Khel,33.15,70.433333,Evening,0,2,0,1,0,0,0,0,0,1,-,2,3,3,5,0,0,0,0,1,2
@@ -96,7 +96,7 @@ Ob127,19/09/2010,NWA,Pakistan,Deegan,Pakistan Deegan,32.1605886,74.1840763,Eveni
 Ob151,27/10/2010,NWA,Pakistan,Deegan,Pakistan Deegan,32.1605886,74.1840763,Afternoon,1,0,0,0,0,0,0,0,1,0,-,2,2,2,4,0,0,0,0,1,1
 Ob258,23/01/2012,NWA,Pakistan,Deegan,Pakistan Deegan,32.1605886,74.1840763,Morning,1,1,0,0,0,0,0,0,1,1,-,2,2,2,5,0,0,0,0,1,3
 Ob293,1/9/2012,NWA,Pakistan,Deegan,Pakistan Deegan,32.1605886,74.1840763,Morning,1,2,1,1,0,0,0,0,0,1,2/4/2016,4,7,4,6,0,0,0,0,2,3
-B14,16/03/2008,SWA,Pakistan,Dhook Pir Bagh,Pakistan Dhook Pir Bagh,26.877254,80.9672343,Afternoon,1,1,1,1,0,0,0,0,0,0,4,Unreported,Unreported,18,20,0,4,0,0,5,9
+B14,16/03/2008,SWA,India,Dhook Pir Bagh,Pakistan Dhook Pir Bagh,26.877254,80.9672343,Afternoon,1,1,1,1,0,0,0,0,0,0,4,Unreported,Unreported,18,20,0,4,0,0,5,9
 B38,31/10/2008,SWA,Pakistan,Dhook Pir Bagh,Pakistan Dhook Pir Bagh,32.273128,69.552383,,1,1,1,1,0,0,0,0,0,0,3,2,2,4,12,1,1,0,0,2,30
 Ob188,23/01/2011,NWA,Pakistan,Doga Mada Khel,Pakistan Doga Mada Khel,32.909136,69.76078,Morning,2,2,1,1,0,0,0,0,1,1,3,2,2,2,5,0,0,0,0,0,0
 Ob208,13/05/2011,NWA,Pakistan,Doga Mada Khel,Pakistan Doga Mada Khel,32.909136,69.76078,,1,1,0,0,0,0,0,0,1,1,-,2,4,3,5,0,0,0,0,0,0
@@ -124,9 +124,9 @@ B32,9/10/2008,NWA,Pakistan,Ghundikala,Pakistan Ghundikala,32.9598548,70.1563715,
 Ob70,15/02/2010,NWA,Pakistan,Ghundikala,Pakistan Ghundikala,32.9598548,70.1563715,Morning,1,1,0,0,0,0,0,0,1,1,-,1,2,4,5,0,0,0,0,0,0
 B48,22/12/2008,SWA,Thailand,Ghwa Khwa,Thailand Ghwa Khwa,17.0363855,100.583514,Morning,1,1,0,0,0,0,0,0,1,1,-,Unreported,Unreported,3,3,0,0,0,0,5,5
 Ob301,1/12/2012,SWA,Thailand,Ghwa Khwa,Thailand Ghwa Khwa,17.0363855,100.583514,Afternoon,1,2,0,1,0,0,0,0,1,1,4,2,3,1,4,0,0,0,0,3,3
-B25,5/9/2008,NWA,India,Gurwak,India Gurwak,32.849812,69.465265,Morning,1,2,1,2,0,0,0,0,0,0,4,3,3,5,12,5,7,3,4,0,0
-Ob92,11/5/2010,NWA,India,Gurwak,India Gurwak,32.849812,69.465265,Afternoon,0,2,0,1,0,0,0,0,0,1,-,2,2,7,15,0,0,0,0,4,4
-Ob227,11/7/2011,NWA,India,Gurwak,India Gurwak,32.849812,69.465265,Evening,2,2,1,1,0,0,0,0,1,1,4,4,4,5,12,0,0,0,0,2,2
+B25,5/9/2008,NWA,Pakistan,Gurwak,India Gurwak,32.849812,69.465265,Morning,1,2,1,2,0,0,0,0,0,0,4,3,3,5,12,5,7,3,4,0,0
+Ob92,11/5/2010,NWA,Pakistan,Gurwak,India Gurwak,32.849812,69.465265,Afternoon,0,2,0,1,0,0,0,0,0,1,-,2,2,7,15,0,0,0,0,4,4
+Ob227,11/7/2011,NWA,Pakistan,Gurwak,India Gurwak,32.849812,69.465265,Evening,2,2,1,1,0,0,0,0,1,1,4,4,4,5,12,0,0,0,0,2,2
 Ob98,19/06/2010,NWA,Pakistan,Haider Khel,Pakistan Haider Khel,32.9455956,70.3153278,Morning,0,2,0,1,0,0,0,1,0,0,4,1,2,16,17,0,0,0,0,10,18
 Ob153,1/11/2010,NWA,Pakistan,Haider Khel,Pakistan Haider Khel,32.9455956,70.3153278,Morning,2,2,2,2,0,0,0,0,0,0,-,2,5,5,6,0,0,0,0,2,2
 Ob186,12/1/2011,NWA,Pakistan,Haider Khel,Pakistan Haider Khel,32.9455956,70.3153278,Morning,1,1,1,1,0,0,0,0,0,0,3,2,2,3,6,0,0,0,0,2,15
@@ -143,14 +143,14 @@ Ob82,27/03/2010,NWA,Iran,Hurmuz,Iran Hurmuz,27.0870766,56.4579919,,1,2,1,2,0,0,0
 Ob141,6/10/2010,NWA,Iran,Hurmuz,Iran Hurmuz,27.0870766,56.4579919,Night,1,1,1,1,0,0,0,0,0,0,4,2,2,3,5,0,0,0,0,3,3
 Ob226,5/7/2011,NWA,Iran,Hurmuz,Iran Hurmuz,27.0870766,56.4579919,Night,0,2,0,2,0,0,0,0,0,0,4,2,4,4,6,0,3,0,2,5,5
 Ob297,10/10/2012,NWA,Iran,Hurmuz,Iran Hurmuz,27.0870766,56.4579919,Night,1,1,1,1,0,0,0,0,0,0,3,4,6,3,6,0,0,0,0,3,3
-Ob90,9/5/2010,NWA,Afghanistan,Inzarkas,Afghanistan Inzarkas,32.97355,69.62063,Morning,1,1,1,1,0,0,0,0,0,0,4,2,2,5,10,0,4,0,0,4,4
-Ob137,2/10/2010,NWA,Afghanistan,Inzarkas,Afghanistan Inzarkas,32.97355,69.62063,Morning,1,1,1,1,0,0,0,0,0,0,4,2,4,8,10,0,0,0,0,2,4
-Ob138,2/10/2010,NWA,Afghanistan,Inzarkas,Afghanistan Inzarkas,32.97355,69.62063,Afternoon,2,2,1,1,0,0,0,0,1,1,-,4,4,7,14,0,0,0,0,2,2
-Ob146,13/10/2010,NWA,Afghanistan,Inzarkas,Afghanistan Inzarkas,32.97355,69.62063,Evening,2,3,1,1,0,0,0,0,1,2,-,2,3,6,14,3,6,0,0,0,0
-Ob200,14/03/2011,NWA,India,Isha Check Point,India Isha Check Point,32.966934,70.111426,Morning,1,1,0,0,0,0,0,0,1,1,-,2,6,3,6,0,0,0,0,0,0
-Ob211,20/05/2011,NWA,India,Isha Check Point,India Isha Check Point,32.966934,70.111426,Evening,0,2,0,1,0,0,0,0,0,1,4,2,2,4,6,0,0,0,0,0,0
-Ob221,15/06/2011,NWA,India,Isha Check Point,India Isha Check Point,32.966934,70.111426,Evening,1,1,0,0,0,0,0,0,1,1,-,2,6,5,6,5,6,0,0,0,0
-Ob279,13/06/2012,NWA,India,Isha Check Point,India Isha Check Point,32.966934,70.111426,Evening,1,2,0,0,0,0,0,0,1,2,-,2,3,2,4,0,0,0,0,0,0
+Ob90,9/5/2010,NWA,Pakistan,Inzarkas,Afghanistan Inzarkas,32.97355,69.62063,Morning,1,1,1,1,0,0,0,0,0,0,4,2,2,5,10,0,4,0,0,4,4
+Ob137,2/10/2010,NWA,Pakistan,Inzarkas,Afghanistan Inzarkas,32.97355,69.62063,Morning,1,1,1,1,0,0,0,0,0,0,4,2,4,8,10,0,0,0,0,2,4
+Ob138,2/10/2010,NWA,Pakistan,Inzarkas,Afghanistan Inzarkas,32.97355,69.62063,Afternoon,2,2,1,1,0,0,0,0,1,1,-,4,4,7,14,0,0,0,0,2,2
+Ob146,13/10/2010,NWA,Pakistan,Inzarkas,Afghanistan Inzarkas,32.97355,69.62063,Evening,2,3,1,1,0,0,0,0,1,2,-,2,3,6,14,3,6,0,0,0,0
+Ob200,14/03/2011,NWA,Pakistan,Isha Check Point,India Isha Check Point,32.966934,70.111426,Morning,1,1,0,0,0,0,0,0,1,1,-,2,6,3,6,0,0,0,0,0,0
+Ob211,20/05/2011,NWA,Pakistan,Isha Check Point,India Isha Check Point,32.966934,70.111426,Evening,0,2,0,1,0,0,0,0,0,1,4,2,2,4,6,0,0,0,0,0,0
+Ob221,15/06/2011,NWA,Pakistan,Isha Check Point,India Isha Check Point,32.966934,70.111426,Evening,1,1,0,0,0,0,0,0,1,1,-,2,6,5,6,5,6,0,0,0,0
+Ob279,13/06/2012,NWA,Pakistan,Isha Check Point,India Isha Check Point,32.966934,70.111426,Evening,1,2,0,0,0,0,0,0,1,2,-,2,3,2,4,0,0,0,0,0,0
 Ob58,9/1/2010,NWA,Pakistan,Ismail Khel,Pakistan Ismail Khel,32.9267594,70.6462166,Evening,1,1,1,1,0,0,0,0,0,0,-,2,2,4,5,0,0,0,0,5,5
 Ob152,28/10/2010,NWA,Pakistan,Ismail Khel,Pakistan Ismail Khel,32.9267594,70.6462166,Night,1,1,1,1,0,0,0,0,0,0,4,2,2,4,8,0,4,0,0,0,0
 Ob195,9/3/2011,NWA,Pakistan,Ismail Khel,Pakistan Ismail Khel,32.9267594,70.6462166,,1,1,1,1,0,0,0,0,0,0,-,2,2,5,5,0,0,0,0,2,3
@@ -166,22 +166,22 @@ Ob101,29/06/2010,SWA,India,Kari Kot,India Kari Kot,28.2625664,81.1361543,,1,2,1,
 Ob213,3/6/2011,SWA,India,Kari Kot,India Kari Kot,28.2625664,81.1361543,,0,1,0,1,0,0,0,0,0,0,-,2,2,5,12,0,0,0,0,1,3
 Ob276,2/6/2012,SWA,India,Kari Kot,India Kari Kot,28.2625664,81.1361543,Morning,1,1,0,0,0,0,0,0,1,1,-,2,4,2,4,0,0,0,0,0,0
 B45,5/12/2008,NWA,Uganda,Kateera,Uganda Kateera,0.2954802,32.4700333,Afternoon or evening or night,1,1,1,1,0,0,0,0,0,0,-,2,2,3,4,0,0,0,0,2,2
-Ob11,4/4/2009,NWA,Afghanistan,Khadar Khel,Afghanistan Khadar Khel,32.97355,69.62063,Night,1,2,1,2,0,0,0,0,0,0,4,2,2,13,15,8,13,3,5,1,1
-Ob115,3/9/2010,NWA,Afghanistan,Khadar Khel,Afghanistan Khadar Khel,32.97355,69.62063,Evening,0,1,0,1,0,0,0,0,0,0,4,3,4,2,4,0,0,0,0,2,2
-Ob169,10/12/2010,NWA,Afghanistan,Khadar Khel,Afghanistan Khadar Khel,32.97355,69.62063,Afternoon,1,2,0,1,0,0,0,0,1,1,-,2,4,4,4,0,0,0,0,2,2
+Ob11,4/4/2009,NWA,Pakistan,Khadar Khel,Afghanistan Khadar Khel,32.97355,69.62063,Night,1,2,1,2,0,0,0,0,0,0,4,2,2,13,15,8,13,3,5,1,1
+Ob115,3/9/2010,NWA,Pakistan,Khadar Khel,Afghanistan Khadar Khel,32.97355,69.62063,Evening,0,1,0,1,0,0,0,0,0,0,4,3,4,2,4,0,0,0,0,2,2
+Ob169,10/12/2010,NWA,Pakistan,Khadar Khel,Afghanistan Khadar Khel,32.97355,69.62063,Afternoon,1,2,0,1,0,0,0,0,1,1,-,2,4,4,4,0,0,0,0,2,2
 Ob163,21/11/2010,NWA,Pakistan,Khaddi,Pakistan Khaddi,32.9723841,70.2140444,Afternoon,2,2,1,1,0,0,0,0,1,1,-,2,4,5,9,0,3,0,0,0,0
 Ob10,1/4/2009,Orakzai,Pakistan,Khadezai,Pakistan Khadezai,33.6413167,70.7827342,Morning,1,1,1,1,0,0,0,0,0,0,4,2,2,10,14,5,5,3,3,4,16
 Ob298,11/10/2012,Orakzai,Pakistan,Khadezai,Pakistan Khadezai,33.6413167,70.7827342,Morning or afternoon,4,4,3,3,1,1,0,0,0,0,4,4,4,16,26,0,2,0,0,5,15
-Ob17,16/05/2009,NWA,India,Khaisoori,India Khaisoori,32.876181,70.241282,Morning,0,3,0,1,0,1,0,0,0,1,4,2,2,25,40,9,9,0,0,2,2
-Ob142,7/10/2010,NWA,India,Khaisoori,India Khaisoori,32.876181,70.241282,Afternoon,1,2,0,1,0,0,0,0,1,1,-,2,2,4,4,0,0,0,0,2,2
-Ob164,22/11/2010,NWA,India,Khaisoori,India Khaisoori,32.876181,70.241282,Evening,1,2,0,0,0,0,0,0,1,2,-,2,2,3,6,0,0,0,0,2,3
-Ob196,11/3/2011,NWA,India,Khaisoori,India Khaisoori,32.876181,70.241282,Afternoon,1,1,0,0,0,0,0,0,1,1,-,2,10,4,12,5,5,0,0,0,0
-Ob263,16/02/2012,NWA,India,Khaisoori,India Khaisoori,32.876181,70.241282,Afternoon,1,1,0,0,0,0,0,0,1,1,-,Unreported,Unreported,8,15,0,0,0,0,3,3
+Ob17,16/05/2009,NWA,Pakistan,Khaisoori,India Khaisoori,32.876181,70.241282,Morning,0,3,0,1,0,1,0,0,0,1,4,2,2,25,40,9,9,0,0,2,2
+Ob142,7/10/2010,NWA,Pakistan,Khaisoori,India Khaisoori,32.876181,70.241282,Afternoon,1,2,0,1,0,0,0,0,1,1,-,2,2,4,4,0,0,0,0,2,2
+Ob164,22/11/2010,NWA,Pakistan,Khaisoori,India Khaisoori,32.876181,70.241282,Evening,1,2,0,0,0,0,0,0,1,2,-,2,2,3,6,0,0,0,0,2,3
+Ob196,11/3/2011,NWA,Pakistan,Khaisoori,India Khaisoori,32.876181,70.241282,Afternoon,1,1,0,0,0,0,0,0,1,1,-,2,10,4,12,5,5,0,0,0,0
+Ob263,16/02/2012,NWA,Pakistan,Khaisoori,India Khaisoori,32.876181,70.241282,Afternoon,1,1,0,0,0,0,0,0,1,1,-,Unreported,Unreported,8,15,0,0,0,0,3,3
 Ob129,21/09/2010,SWA,Pakistan,Khand Morsak,Pakistan Khand Morsak,32.337765,70.117493,Evening,1,1,0,0,0,0,0,0,1,1,-,2,2,7,8,0,0,0,0,4,5
 Ob117,6/9/2010,NWA,Pakistan,Khar Qamar,Pakistan Khar Qamar,33.065,69.5488889,Afternoon,0,1,0,0,0,0,0,0,0,1,-,2,2,3,6,0,0,0,0,1,1
 Ob189,23/01/2011,NWA,Pakistan,Khar Qamar,Pakistan Khar Qamar,33.065,69.5488889,Afternoon,1,0,0,0,0,0,0,0,1,0,-,1,2,2,3,0,0,0,0,0,0
 Ob250,30/10/2011,NWA,Pakistan,Khar Qamar,Pakistan Khar Qamar,33.065,69.5488889,Morning,1,3,0,1,0,0,0,0,1,2,2,2,6,4,6,4,4,0,0,2,3
-Ob222,20/06/2011,Kurram,India,Khardand,India Khardand,27.9034175,84.3630695,Morning,1,1,0,0,0,0,0,0,1,1,-,2,3,5,7,2,7,0,0,0,3
+Ob222,20/06/2011,Kurram,Nepal,Khardand,India Khardand,27.9034175,84.3630695,Morning,1,1,0,0,0,0,0,0,1,1,-,2,3,5,7,2,7,0,0,0,3
 Ob155,3/11/2010,NWA,Pakistan,Khaso Khel,Pakistan Khaso Khel,24.9394559,68.5293728,Evening,1,2,0,1,0,0,0,0,1,1,-,2,3,4,5,0,0,0,0,0,0
 Ob239,11/9/2011,NWA,Pakistan,Khaso Khel,Pakistan Khaso Khel,24.9394559,68.5293728,Evening,0,2,0,1,0,0,0,0,0,1,4,2,2,1,5,0,0,0,0,1,3
 B12,29/01/2008,NWA,Pakistan,Khushali,Pakistan Khushali,32.9387751,70.2482734,Night,2,2,2,2,0,0,0,0,0,0,4,Unreported,Unreported,12,15,4,6,2,3,1,2
@@ -203,8 +203,8 @@ Ob26,8/7/2009,SWA,Pakistan,Ladha,Pakistan Ladha,33.7978438,72.4860955,Afternoon,
 Ob29,5/8/2009,SWA,Pakistan,Ladha,Pakistan Ladha,33.7978438,72.4860955,Night,1,1,1,1,0,0,0,0,0,0,4,2,4,1,12,1,4,0,0,5,5
 Ob47,10/12/2009,SWA,Pakistan,Ladha,Pakistan Ladha,33.7978438,72.4860955,,1,1,1,1,0,0,0,0,0,0,-,2,2,6,6,0,0,0,0,8,8
 Ob194,8/3/2011,SWA,Pakistan,Landidog,Pakistan Landidog,32.28891,69.415827,Afternoon,1,2,1,2,0,0,0,0,0,0,3,2,5,2,5,0,5,0,0,2,2
-Ob91,11/5/2010,NWA,Indonesia,Lawra Mandi,Indonesia Lawra Mandi,32.97922,69.496036,Morning,2,2,1,1,0,0,0,0,1,1,4,11,18,8,14,0,4,0,0,12,12
-Ob132,26/09/2010,NWA,Indonesia,Lawra Mandi,Indonesia Lawra Mandi,32.97922,69.496036,,0,2,0,1,0,0,0,0,0,1,-,5,5,4,5,0,0,0,0,2,2
+Ob91,11/5/2010,NWA,Pakistan,Lawra Mandi,Indonesia Lawra Mandi,32.97922,69.496036,Morning,2,2,1,1,0,0,0,0,1,1,4,11,18,8,14,0,4,0,0,12,12
+Ob132,26/09/2010,NWA,Pakistan,Lawra Mandi,Indonesia Lawra Mandi,32.97922,69.496036,,0,2,0,1,0,0,0,0,0,1,-,5,5,4,5,0,0,0,0,2,2
 Ob33,7/9/2009,NWA,Pakistan,Machi Khel,Pakistan Machi Khel,33.0291339,70.2467852,Evening,1,3,1,1,0,1,0,0,0,1,3,2,2,5,8,3,3,0,0,2,7
 Ob52,31/12/2009,NWA,Pakistan,Machi Khel,Pakistan Machi Khel,33.0291339,70.2467852,Evening,1,2,1,2,0,0,0,0,0,0,4,2,2,3,7,3,3,1,1,2,2
 Ob87,24/04/2010,NWA,Pakistan,Machi Khel,Pakistan Machi Khel,33.0291339,70.2467852,Evening,1,1,1,1,0,0,0,0,0,0,-,3,3,7,9,0,0,0,0,0,0
@@ -331,8 +331,8 @@ Ob305,29/12/2012,NWA,Pakistan,Shawal NWA,Pakistan Shawal NWA,32.61581,69.489212,
 Ob319,7/6/2013,NWA,Pakistan,Shawal NWA,Pakistan Shawal NWA,32.61581,69.489212,Night,1,2,1,1,0,0,0,0,0,1,4,2,2,7,10,0,0,0,0,3,4
 Ob322,28/07/2013,NWA,Pakistan,Shawal NWA,Pakistan Shawal NWA,32.61581,69.489212,Evening,0,1,0,1,0,0,0,0,0,0,4,2,2,5,8,0,0,0,0,2,4
 Ob267,13/03/2012,SWA,Pakistan,Shawal SWA,Pakistan Shawal SWA,32.61581,69.489212,Morning,1,2,0,1,0,0,0,0,1,1,-,2,2,6,7,0,0,0,0,3,3
-Ob102,15/07/2010,NWA,Afghanistan,Sheerani,Afghanistan Sheerani,32.884272,69.654522,Evening,1,1,1,1,0,0,0,0,0,0,4,2,3,9,14,0,7,0,0,3,3
-Ob134,26/09/2010,NWA,Afghanistan,Sheerani,Afghanistan Sheerani,32.884272,69.654522,,1,1,0,0,0,0,0,0,1,1,-,Unreported,Unreported,2,3,0,0,0,0,0,0
+Ob102,15/07/2010,NWA,Pakistan,Sheerani,Afghanistan Sheerani,32.884272,69.654522,Evening,1,1,1,1,0,0,0,0,0,0,4,2,3,9,14,0,7,0,0,3,3
+Ob134,26/09/2010,NWA,Pakistan,Sheerani,Afghanistan Sheerani,32.884272,69.654522,,1,1,0,0,0,0,0,0,1,1,-,Unreported,Unreported,2,3,0,0,0,0,0,0
 Ob175,27/12/2010,NWA,India,Shera Tala,India Shera Tala,29.8672752,79.0404926,Morning,2,3,0,0,0,0,0,0,2,3,-,6,8,18,22,0,0,0,0,0,0
 Ob237,19/08/2011,SWA,Pakistan,Shin Warsak,Pakistan Shin Warsak,32.2463889,69.51,Afternoon,1,1,1,1,0,0,0,0,0,0,4,2,2,3,4,0,0,0,0,2,2
 Ob300,29/11/2012,SWA,Pakistan,Shin Warsak,Pakistan Shin Warsak,32.2463889,69.51,Afternoon,0,2,0,1,0,0,0,0,0,1,-,2,3,1,4,0,0,0,0,3,4
@@ -372,8 +372,8 @@ B2,8/5/2005,NWA,Nepal,Toorikhel,Nepal Toorikhel,29.2766474,82.1821549,Night,1,1,
 Ob215,6/6/2011,SWA,Pakistan,Wacha Dana,Pakistan Wacha Dana,32.285137,69.456596,Night or morning,0,2,0,1,0,1,0,0,0,0,4,2,2,8,10,0,7,0,0,3,3
 B43,27/11/2008,SWA,Pakistan,Wana,Pakistan Wana,32.3006562,69.5797495,,1,1,0,0,0,0,0,0,1,1,-,2,2,5,5,0,0,0,0,0,0
 Ob219,15/06/2011,SWA,Pakistan,Wana,Pakistan Wana,32.3006562,69.5797495,Afternoon,1,2,1,1,0,0,0,0,0,1,-,2,2,2,10,0,0,0,0,2,2
-Ob60,15/01/2010,NWA,Afghanistan,Zanani,Afghanistan Zanani,32.971444,70.278168,Evening,1,1,1,1,0,0,0,0,0,0,4,4,5,5,10,0,0,0,0,3,3
-Ob275,28/05/2012,NWA,Afghanistan,Zangar Khel,Afghanistan Zangar Khel,32.977744,70.226583,Night,1,2,0,1,0,0,0,0,1,1,1,1,2,2,5,0,0,0,0,0,0
+Ob60,15/01/2010,NWA,Pakistan,Zanani,Afghanistan Zanani,32.971444,70.278168,Evening,1,1,1,1,0,0,0,0,0,0,4,4,5,5,10,0,0,0,0,3,3
+Ob275,28/05/2012,NWA,Pakistan,Zangar Khel,Afghanistan Zangar Khel,32.977744,70.226583,Night,1,2,0,1,0,0,0,0,1,1,1,1,2,2,5,0,0,0,0,0,0
 B19,20/08/2008,SWA,Pakistan,Zari Noor,Pakistan Zari Noor,32.318292,69.522042,Evening,1,1,1,1,0,0,0,0,0,0,4,2,2,6,12,0,0,0,0,5,5
 Ob13,19/04/2009,SWA,Pakistan,Zari Noor,Pakistan Zari Noor,32.318292,69.522042,Morning,1,4,1,2,0,0,0,0,0,2,4,2,2,0,8,0,8,0,0,3,5
 Ob136,28/09/2010,SWA,Pakistan,Zeba Pahar,Pakistan Zeba Pahar,32.454301,69.322615,Evening,1,1,1,1,0,0,0,0,0,0,4,2,2,4,4,0,0,0,0,2,2

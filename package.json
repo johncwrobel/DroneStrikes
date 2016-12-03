@@ -1,0 +1,24 @@
+{
+  "name": "cs4460",
+  "version": "1.0.0",
+  "description": "Middle Eastern Drone Strikes",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0",
+    "font-awesome": "^4.6.3",
+    "jquery": "^1.11.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-header": "^1.8.7",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.gatech.edu/jrodriguez79/cs-4460-fall-16-Final-Project.git"
+  },
+  "license": "ISC"
+}

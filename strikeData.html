@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/d3.slider.css" />
+    <title>Worldwide USAF Drone Strikes</title>
+  </head>
+
+  <body>
+    <h1>Worldwide USAF Drone Strikes</h1>
+    
+    <div id="map"></div>
+    <div class="wrap">
+      <div class="barchart"></div>
+    
+    </div>
+    <div class="timeline">
+      <div id="slider"></div>
+      <h4>Choose a range of years for which to display data</h4>
+      </div>
+
+    <!-- D3 library -->
+    <script src="lib/d3.js" charset="utf-8"></script>
+    <script src="lib/d3.min.js" charset="utf-8"></script>
+    <script src="lib/d3.v3.min.js" charset="utf-8"></script>
+    
+    <!-- External js libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="lib/d3.slider.js"></script>
+
+    <!-- Other js libraries -->
+    <script src="lib/jquery.min.js"></script>
+
+    <!-- Our js files -->
+    <script src="js/barChart.js"></script>
+
+    <script>
+      var map;
+      var markers = [];
+
+      function initMap() {
+        var myLatLng = {lat: 29.227945, lng: 68.857616}; //a position that gives us a good view of all strikes
+
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: myLatLng
+        });
+
+        d3.csv("data/Drone Strike Data.csv", function(error, data) {
+
+          data.forEach(function(d) {
+            d["Latitude"] = +d["Latitude"];
+            d["Longitude"] = +d["Longitude"];
+
+            var position = new google.maps.LatLng(d["Latitude"], d["Longitude"]);
+
+            var infowindow = new google.maps.InfoWindow({
+              content: 
+              "<h2>" + d["Location"] + "</h2><p><b>Date:</b> " + d["Date"] + "</p><p><b>Reporting Tribal Agency:</b> " + d["Tribal Agency"] + "</p><p><b>Total Killed:</b> " + d["Maximum Total Reported Killed"] + "</p><p><b>Civillians Killed:</b> " + d["Maximum Civilians Reported Killed"] +"</p><p><b>Children Killed:</b> " + d["Maximum Children Reported Killed"] + "</p><p><b>Buildings Destroyed:</b> " + d["Maximum All Targets"] + "</p><p><b>Missiles Fired:</b> " + d["Maximum Number of Missiles Reported Fired"] + "</p>"
+            });
+
+            var pinColor = "fe7569";
+            var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor,
+              new google.maps.Size(21, 34),
+              new google.maps.Point(0,0),
+              new google.maps.Point(10, 34));
+
+            var marker = new google.maps.Marker({
+              map: map,
+              position: position,
+              icon: pinImage,
+              animation: google.maps.Animation.DROP,
+              customInfo: d["Country"],
+              customInfo2: d["Date"].slice(-4)
+            });
+
+            //tracking of markers for filtering stuff
+            markers.push(marker);
+
+            marker.addListener('click', function() {
+              infowindow.open(map, marker);
+              console.log("highlighting bar");
+              highlight_bar(d["Country"]);
+            });
+
+          })
+        })
+      }
+
+      function update_markers(country) {
+        for (var i = 0; i < markers.length; i++) {
+          if(markers[i].customInfo == country) {
+            //make green marker
+            var pinColor = "1c821e";
+            var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor,
+                new google.maps.Size(21, 34),
+                new google.maps.Point(0,0),
+                new google.maps.Point(10, 34));
+            markers[i].setIcon(pinImage);
+          } else {
+            //make red marker
+            var pinColor = "fe7569";
+            var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor,
+                new google.maps.Size(21, 34),
+                new google.maps.Point(0,0),
+                new google.maps.Point(10, 34));
+            markers[i].setIcon(pinImage);
+          }
+        }
+      }
+
+      function update_markers_for_year(start, end) {
+        for (var i = 0; i < markers.length; i++) {
+          if (markers[i].customInfo2 >= start && markers[i].customInfo2 <= end) {
+            markers[i].setMap(map);
+          } else {
+            markers[i].setMap(null);
+          }
+        }
+      }
+    </script>
+
+    <script>
+      var start = 2005;
+      var end = 2013;
+      d3.select("#slider")
+        .call(d3.slider().axis(true).min(2005).max(2013).step(1).value([2005,2013])
+        .on("slide", function(evt, value) {
+          start = value[0];
+          end = value[1];
+          filter_barchart();
+          update_markers_for_year(start, end);
+      }));
+    </script>
+
+    <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtkuqLZG08Ov_5Ud0rZ5JV_eGifc42V3s&callback=initMap"></script>
+  </body>
+</html>

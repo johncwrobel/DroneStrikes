@@ -1,69 +1,119 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Worldwide USAF Drone Strikes</title>
-  </head>
 
-  <body>
-    <h1>Worldwide USAF Drone Strikes</h1>
-    
-    <div class="wrap">
-      <div class="barchart"></div>
+    <!-- Bootstrap Core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> -->
+                <a class="navbar-brand" href="#">Drone Strikes Across the World</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <!--  <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul> -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Did you know that there have been over 380 drone strikes carried out by the US between 2005 and 2013 across the world?</h1>
+                <p class="lead"> The United States of America has one of the most powerful militaries in the world. In recent history, one of the most common ways in which the US military projects force across the world and conducts operations is through the utilization of RPA (Remotely Piloted Aircraft) also known as “drones”. Perhaps the most infamous drone model that the United States Air Force operates is the Reaper (formerly known as the Predator). The Reaper has a top speed of around 300mph, is capable of staying airborne for over 24 hours, and can conduct both reconnaissance and strike missions. In the past few years many airstrikes have been carried out by Reaper drones across the world. While these strikes usually help us complete military objectives and protect our country, they do have a cost. How many civilians die to these strikes? How many buildings are destroyed because of these strikes? What countries are most frequently targeted by these strikes? Through the visualization on the following page you can find the answers to these questions and more.
+                </p>
+                <img src="data/drone.JPG" alt="Drone image" style="width:456px;height:356px;">
+                <p>Image from: http://www.af.mil/AboutUs/FactSheets/Display/tabid/224/Article/104470/mq-9-reaper.aspx</p>
+                <p class = "lead"><b><u>How the visualization works:</u></b> You can interact with the map like any normal Google map (click and drag, zoom, etc.). Clicking on a marker for a strike on the map will display additional data and highlight the bar corresponding to the country on the bar graph. Clicking any of the smaller bar graphs will change what data is displayed on the larger graph. Clicking any bar on the bar graph will change the color of strike markers in that country. Use the slider at the bottom of the page to adjust the year range for which data will be displayed on both the graph and the map.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <button type="button" class="btn btn-secondary btn-lg" onclick="location.href='strikeData.html'">Start Visualization</button>
+            </div>
+        </div>
+        <div class="row" style="padding:25px">
+            <div class="col-lg-12 text-center">
+                <div class="row">
+                    <h4> This visualization was built for CS 4460 at Georgia Tech. The members of the Team were: </h4>
+                </div>
+                <div class="row">
+                    <p> Javier I. Rodriguez </p>
+                </div>
+                <div class="row">
+                    <p> Cameron Gallahue </p>
+                </div>
+                <div class="row">
+                    <p> John Wrobel </p>
+                </div>
+                <div class="row">
+                    <p> Nicolette Fink </p>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
     </div>
+    <!-- /.container -->
 
-    <div id="map"></div>
+    <!-- jQuery Version 1.11.1 -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
-    <!-- D3 library -->
-    <script src="lib/d3.js" charset="utf-8"></script>
-    <script src="lib/d3.min.js" charset="utf-8"></script>
-    <script src="lib/d3.v3.min.js" charset="utf-8"></script>
-    
-    <!-- Other js libraries -->
-    <script src="lib/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- Our js files -->
-    <script src="js/barChart.js"></script>
+</body>
 
-    <script>
-      function initMap() {
-        var myLatLng = {lat: 29.227945, lng: 68.857616};
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 3,
-          center: myLatLng
-        });
-
-        d3.csv("data/Drone Strike Data.csv", function(error, data) {
-
-          data.forEach(function(d) {
-            d["Latitude"] = +d["Latitude"];
-            d["Longitude"] = +d["Longitude"];
-
-            var position = new google.maps.LatLng(d["Latitude"], d["Longitude"]);
-
-            var infowindow = new google.maps.InfoWindow({
-              content: 
-              "<h2>" + d["Location"] + "</h2><p><b>Date:</b> " + d["Date"] + "</p><p><b>Reporting Tribal Agency:</b> " + d["Tribal Agency"] + "</p><p><b>Total Killed:</b> " + d["Maximum Total Reported Killed"] + "</p><p><b>Civillians Killed:</b> " + d["Maximum Civilians Reported Killed"] +"</p><p><b>Children Killed:</b> " + d["Maximum Children Reported Killed"] + "</p><p><b>Buildings Destroyed:</b> " + d["Maximum All Targets"] + "</p><p><b>Missiles Fired:</b> " + d["Maximum Number of Missiles Reported Fired"] + "</p>"
-            });
-
-            var marker = new google.maps.Marker({
-              map: map,
-              position: position
-            });
-
-            marker.addListener('click', function() {
-              infowindow.open(map, marker);
-            });
-
-          })
-        })
-      }
-    </script>
-
-    <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtkuqLZG08Ov_5Ud0rZ5JV_eGifc42V3s&callback=initMap"></script>
-  </body>
 </html>

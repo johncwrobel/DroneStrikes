@@ -6,7 +6,7 @@ have the source url.
 
 /* Added margins on right and left, increased bottom margin */
 var margin = {top: 20, right: 15, bottom: 100, left: 15};
-var width = 500 - margin.left - margin.right;
+var width = 475 - margin.left - margin.right;
 var height = 600 - margin.top - margin.bottom;
 var padding = 80;
 var x_translate = 40;
@@ -14,6 +14,7 @@ var aggregatedData;
 
 var variables = ["Maximum Total Reported Killed", "Maximum Civilians Reported Killed", "Maximum Number of Missiles Reported Fired", "Maximum Domestic Buildings"]
 var short_variables = ["Total Killed", "Civialian Casualties", "Missiles Fired", "Buildings Destroyed"]
+var extern_data;
 /* Setup axes/scales for bar chart */
 var barX = d3.scale.ordinal()
 	.rangeRoundBands([30, width - 40 * 2], 0.1);
@@ -27,11 +28,6 @@ var barYaxis = d3.svg.axis().scale(barY).orient("left");
 var smallMultipleX = d3.scale.ordinal()
   .rangeRoundBands([0, width / variables.length], 0.1);
 var smallMultipleY = d3.scale.linear().range([100,0]);
-
-// add the tooltip area to the webpage
-/*var tooltip = d3.select("body").append("div")
-    .attr("class", "tooltip")
-    .style("opacity", 0);*/
 
 // creating bar chart <- changed this from scatter plot to bar chart
 var barchart = d3.select(".barchart")
@@ -51,12 +47,24 @@ variables.forEach(function(d) {
     .attr("transform", "translate(" + small_multiple_canvases.length * width / variables.length + "," + 0 + ")"));
 });
 
-// creating scatter plot
-/*var scatter = d3.select("body")
-.append("svg")
-.style("width", width + padding) // padding with second scatter
-.style("height", height + margin.bottom)  //svg defalt size: 300*150
-.append("g")*/
+var selectedChart = variables[0];
+function colorForMultiples(v) {
+  if (v == selectedChart) {
+    return "black";
+  } else {
+    return "#9c9c9c"
+  }
+}
+
+var barClicked = 0;
+var lastBarClicked = null;
+function colorForBars(v) {
+  if (barClicked && lastBarClicked == v) {
+    return "#1c821e";
+  } else {
+    return "black";
+  }
+}
 
 // load data
 d3.csv("data/Drone Strike Data.csv", function(error, data) {
@@ -64,7 +72,10 @@ d3.csv("data/Drone Strike Data.csv", function(error, data) {
   // change string (from CSV) into number format
   data.forEach(function(d) {
     d.fatalities = +d["Maximum Total Reported Killed"];
+    d.year = d["Date"].slice(-4);
   });
+
+  extern_data = data;
 
   /* Created dataset to represent manufacturer -> avg calories data,
   this was adapted from http://learnjsdata.com/group_data.html under
@@ -90,6 +101,7 @@ d3.csv("data/Drone Strike Data.csv", function(error, data) {
            .data(aggregatedData)
            .enter()
            .append("rect")
+           .attr("class", "bar")
            .attr("x", function(d, i) {
               return smallMultipleX(i) + x_translate;
            })
@@ -100,13 +112,17 @@ d3.csv("data/Drone Strike Data.csv", function(error, data) {
            .attr("height", function(d) {
               return 100 - smallMultipleY(d.values);
            })
-           .attr("fill", "black");
+           .attr("fill", colorForMultiples(variables[k]));
         small_multiple_canvases[k].append("text")
+          .data(aggregatedData)
+          .attr("class", "small_mult_label")
           .attr("x",x_translate)
           .attr("y",120)
+          .attr("font-size", "10px")
           .attr("width", width / small_multiple_canvases.length)
           .text(short_variables[k]);
         small_multiple_canvases[k].append("rect")
+          .data(aggregatedData)
           .attr("class", variables[k])
           .attr("x",x_translate)
           .attr("y",5)
@@ -116,7 +132,24 @@ d3.csv("data/Drone Strike Data.csv", function(error, data) {
           .attr("opacity", 0)
           .on("click", function(d) {
             update_barchart(data, $(this).attr("class"));
-          });
+          })
+          .on("mouseover", function(d) {
+            var index = variables.indexOf($(this).attr("class"));
+            small_multiples.selectAll(".small_mult_label")
+                .transition().duration(300)
+                .style("font-weight", function(e) {
+                    if ($(this).text() == short_variables[index]) {
+                        return "bold";
+                    } else {
+                        return "normal";
+                    }
+                });
+         })
+         .on("mouseout", function(d) {
+            small_multiples.selectAll(".small_mult_label")
+                .transition().duration(300)
+                .style("font-weight", "normal")
+         });
     };
 
     barchart.append("g")
@@ -126,7 +159,7 @@ d3.csv("data/Drone Strike Data.csv", function(error, data) {
       .call(barXaxis)
     .append("text")
       .attr("class", "xlabel")
-      .attr("x", width - 5)
+      .attr("x", width - 20)
       .attr("y", -6)
       .attr("fill", "black")
       .style("text-anchor", "end")
@@ -163,7 +196,48 @@ d3.csv("data/Drone Strike Data.csv", function(error, data) {
 	   .attr("height", function(d) {
 	   		return height - barY(d.values);
 	   })
-	   .attr("fill", "black");
+	   .attr("fill", function(d) {
+        return colorForBars(d["key"]);
+     })
+     .on("click", function(d) {
+        if (lastBarClicked == d["key"]) {
+          barClicked = 0;
+          lastBarClicked = null;
+        } else {
+          barClicked = 1;
+          lastBarClicked = d["key"];
+          update_markers(lastBarClicked);
+        }
+        barchart.selectAll("rect")
+          .transition().duration(300)
+          .attr("fill", function(d) {
+            return colorForBars(d["key"]);
+          });
+      })
+     .on("mouseover", function(d) {
+        barchart.selectAll(".xLabel")
+            .transition().duration(300)
+            .style("font-weight", function(e) {
+                if (e.key == d.key) {
+                    return "bold";
+                } else {
+                    return "normal";
+                }
+            })
+            .style("font-size", function(e) {
+                if (e.key == d.key) {
+                    return "12px";
+                } else {
+                    return "11px";
+                }
+            })
+     })
+     .on("mouseout", function(d) {
+        barchart.selectAll(".xLabel")
+            .transition().duration(300)
+            .style("font-weight", "normal")
+            .style("font-size", "11px");
+     });
   barchart.selectAll(".barLabel")
      .data(totalFatalities)
      .enter()
@@ -191,7 +265,46 @@ d3.csv("data/Drone Strike Data.csv", function(error, data) {
 	   .attr("font-size", "11px")
 	   .attr("fill", "black")
 	   // Code for rotation of labels adapted from http://stackoverflow.com/questions/11252753/rotate-x-axis-text-in-d3
-	   .attr("transform", function(d, i) { return "translate(" + (barX(i) + x_translate + barX.rangeBand() / 2) + "," + (height + 15) + ")rotate(-45)"; });
+	   .attr("transform", function(d, i) { return "translate(" + (barX(i) + x_translate + barX.rangeBand() / 2) + "," + (height + 15) + ")rotate(-45)"; })
+       .on("click", function(d) {
+            if (lastBarClicked == d["key"]) {
+              barClicked = 0;
+              lastBarClicked = null;
+            } else {
+              barClicked = 1;
+              lastBarClicked = d["key"];
+              update_markers(lastBarClicked);
+            }
+            barchart.selectAll("rect")
+              .transition().duration(300)
+              .attr("fill", function(d) {
+                return colorForBars(d["key"]);
+            });
+       })
+       .on("mouseover", function(d) {
+            barchart.selectAll(".xLabel")
+                .transition().duration(300)
+                .style("font-weight", function(e) {
+                    if (e.key == d.key) {
+                        return "bold";
+                    } else {
+                        return "normal";
+                    }
+                })
+                .style("font-size", function(e) {
+                    if (e.key == d.key) {
+                        return "12px";
+                    } else {
+                        return "11px";
+                    }
+                })
+         })
+         .on("mouseout", function(d) {
+            barchart.selectAll(".xLabel")
+                .transition().duration(300)
+                .style("font-weight", "normal")
+                .style("font-size", "11px");
+         });
 });
 
 function update_barchart(data, variable) {
@@ -200,7 +313,12 @@ function update_barchart(data, variable) {
     the "Summarizing Data" section */
     aggregatedData = d3.nest()
       .key(function(d) { return d["Country"]; })
-      .rollup(function(v) { return d3.sum(v, function(d) { return d[variable]; }); })
+      .rollup(function(v) { return d3.sum(v, function(d) { 
+        if (d.year >= start && d.year <= end) {
+          return d[variable];
+        } else {
+          return 0;
+        } }); })
       .entries(data);
 
     /* Drawing the bar chart - much of this code was copied from my PHW3 with slight modifications */
@@ -220,6 +338,7 @@ function update_barchart(data, variable) {
 
     // update selection
     barchart.selectAll("rect")
+        .transition().duration(300)
         .attr("y", function(d) {
           return barY(d.values);
        })
@@ -227,11 +346,13 @@ function update_barchart(data, variable) {
           return height - barY(d.values);
       });
     barchart.selectAll(".barLabel")
+        .transition().duration(300)
         .text(function(d) {
           return d.values;
         })
         .attr("transform", function(d, i) { return "translate(" + (barX(i) + x_translate + barX.rangeBand() / 2) + "," + barY(d.values) + ")rotate(-45)"; });
     barchart.selectAll(".label")
+        .transition().duration(300)
         .text(variable);
 
     // exit selection
@@ -244,10 +365,58 @@ function update_barchart(data, variable) {
 
     barYaxis.scale(barY);
     barchart.select(".yaxis")
-        .transition()
+        .transition().duration(300)
         .call(barYaxis);
     barchart.select(".label")
         .data(aggregatedData)
         .exit().remove();
 
+    selectedChart = variable
+    for (k = 0; k < variables.length; k++) {
+      aggregatedData = d3.nest()
+          .key(function(d) { return d["Country"]; })
+          .rollup(function(v) { return d3.sum(v, function(d) { 
+              if (d.year >= start && d.year <= end) {
+                return +d[variables[k]]; 
+              } else {
+                return 0;
+              }});
+          })
+          .entries(extern_data);
+        smallMultipleX.domain(d3.range(aggregatedData.length));
+        smallMultipleY.domain([0, d3.max(aggregatedData, function(d) { return d.values + 10; })]);
+        small_multiple_canvases[k].selectAll(".bar")
+           .data(aggregatedData)
+           .enter().append("div");
+        small_multiple_canvases[k].selectAll(".bar")
+           .transition().duration(300)
+           .attr("y", function(d) {
+              return smallMultipleY(d.values)+5;
+           })
+           .attr("height", function(d) {
+              return 100 - smallMultipleY(d.values);
+           })
+           .attr("fill", colorForMultiples(variables[k]));
+        small_multiple_canvases[k].selectAll(".bar")
+           .data(aggregatedData)
+           .exit().remove();
+    }
+
 }
+
+function filter_barchart() {
+  update_barchart(extern_data, selectedChart);
+}
+
+function highlight_bar(country) {
+  if (lastBarClicked != country) {
+    barClicked = 1;
+    lastBarClicked = country;
+  }
+  barchart.selectAll("rect")
+    .transition().duration(300)
+    .attr("fill", function(d) {
+      return colorForBars(d["key"]);
+    });
+}
+
